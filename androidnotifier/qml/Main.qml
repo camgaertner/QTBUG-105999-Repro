@@ -5,11 +5,10 @@ import QtQuick.Window
 
 ApplicationWindow
 {
-
 	Rectangle
 	{
 		anchors.fill: parent
-		color: "red"
+        color: "#00ff00"
 		opacity: 0.5
 	}
 }

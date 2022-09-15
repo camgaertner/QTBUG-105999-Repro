@@ -1,13 +1,17 @@
+
 QT += core gui qml quick quickcontrols2
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+HEADERS += notificationclient.h
+
 SOURCES += \
     main.cpp \
+    notificationclient.cpp \
 
 RESOURCES += \
     main.qrc
 
-target.path = $$[QT_INSTALL_EXAMPLES]/corelib/platform/androidnotifier
+#target.path = $$[QT_INSTALL_EXAMPLES]/corelib/platform/androidnotifier
 INSTALLS += target
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

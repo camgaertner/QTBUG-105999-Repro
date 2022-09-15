@@ -29,27 +29,10 @@ import org.qtproject.qt.android.bindings.QtActivity;
 
 public class MainActivity extends QtActivity
 {
-	
-	static
-	{
-		try
-		{
-			Log.d("test: ", "loading lib");
-			System.loadLibrary("notify_test_lib_" + Build.CPU_ABI);
-			Log.d("test: ", "loaded lib");
-		}
-		catch (Exception e)
-		{
-			Log.d("test:", e.getMessage());
-		}
-	}
 
 	@Override
-	// Interface
 	public void onCreate(Bundle savedInstanceState)
 	{
-		//Log.d("MainActivity", " onCreate");
-		test();
 		super.onCreate(savedInstanceState);
 	}
 
@@ -58,6 +41,4 @@ public class MainActivity extends QtActivity
 	{
 		super.onDestroy();
 	}
-	
-	public native int test();
 }
